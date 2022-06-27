@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>コンタクト</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">おいしいーおいしい 😋</a>
+
+      <nav class="navbar">
+         <a href="home.html">ホム</a>
+         <a href="about.html">メーも</a>
+         <a href="menu.html">メニュー</a>
+         <a href="contact.html">コンタクト</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+
+   </section>
+
+</header>
+
+<div class="heading">
+   <h3>コンタクト</h3>
+   <p><a href="home.html">ホーム </a> <span> / コンタクト</span></p>
+</div>
+
+<section class="contact">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/contact-img.svg" alt="">
+      </div>
+
+      <form action="" method="post">
+         <h3>提案をお願いします!</h3>
+         <input type="text" name="name" required placeholder="名前" maxlength="50" class="box">
+         <input type="number" name="number" required placeholder="電話番号" max="9999999999" min="0" class="box" onkeypress="if(this.value.length == 10) return false;">
+         <input type="email" name="email" required placeholder="メール" maxlength="50" class="box">
+         <textarea name="msg" placeholder="メッセージ" required class="box" cols="30" rows="10" maxlength="500"></textarea>
+         <input type="submit" value="送る" class="btn" name="send">
+      </form>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>メール</h3>
+         <a href="mailto:shaikhanas@gmail.com">doantrungdung2001@gmail.com</a>
+         <a href="mailto:anasbhai@gmail.com">dung.dt194521@sis.hust.edu.vn</a>
+      </div>
+
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>時間</h3>
+         <p>月曜日　ー　金曜日</p>
+         <p>7時午前 から 5時午後まで </p>
+      </div>
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>アドレス</h3>
+         <a href="https://www.google.com/maps">1 Dai Co Viet、Bach Khoa、Hai Ba Trung</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>電話番号</h3>
+         <a>0988　716　998</a>
+         <a>024　3623　1732</a>
+      </div>   
+
+   </section>
+
+   <div class="credit">おいしいーおいしい |😋😋😋😋</div>
+
+</footer>
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
