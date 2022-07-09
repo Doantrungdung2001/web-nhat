@@ -4,7 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>register</title>
+   <title>予約</title>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -30,38 +32,59 @@
 
       <div class="icons">
          <a href="search.html"><i class="fas fa-search"></i></a>
-         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <a href="order.html"><i class="fas fa-shopping-cart"></i></a>
          <div id="user-btn" class="fas fa-user"></div>
          <div id="menu-btn" class="fas fa-bars"></div>
       </div>
 
       <div class="profile">
-         <p class="name">shaikh anas</p>
-         <div class="flex">
-            <a href="profile.html" class="btn">profile</a>
-            <a href="#" class="delete-btn">logout</a>
-         </div>
-         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+         <a href="https://www.google.com/maps/place/%C4%90%E1%BA%A1i+h%E1%BB%8Dc+B%C3%A1ch+khoa+H%C3%A0+N%E1%BB%99i/@21.0070253,105.8409473,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac76ccab6dd7:0x55e92a5b07a97d03!8m2!3d21.0070253!4d105.843136?hl=vi-VN">
+            <p class="name">おいしいーおいしい 😋</p>
+         </a>
       </div>
-
+      
    </section>
 
 </header>
 
-<section class="form-container">
+<div class="heading">
+   <h3>予約</h3>
+   <p><a href="home.html">ホム </a> <span> / 予約</span></p>
+</div>
 
-   <form action="" method="post">
-      <h3>your address</h3>
-      <input type="text" maxlength="50" placeholder="flat no. and building name" required class="box" name="flat">
-      <input type="text" maxlength="50" placeholder="area name" required class="box" name="street">
-      <input type="text" maxlength="50" placeholder="city name" required class="box" name="city">
-      <input type="text" maxlength="50" placeholder="state name" required class="box" name="state">
-      <input type="text" maxlength="50" placeholder="country name" required class="box" name="country">
-      <input type="number" min="0" max="999999" placeholder="pin code" required class="box" name="pin_code" onkeypress="if(this.value.length == 6) return false;">
-      <input type="submit" value="save address" name="submit" class="btn">
-   </form>
+<section class="contact">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/contact-img.svg" alt="">
+      </div>
+<!--
+      <form action="" method="post">
+         <h3>提案をお願いします!</h3>
+         <input type="text" name="name" required placeholder="名前" maxlength="50" class="box">
+         <input type="text" name="number" required placeholder="電話番号" max="9999999999" min="0" class="box" >
+         <input type="text" name="email" required placeholder="メール" maxlength="50" class="box">
+         <textarea name="msg" placeholder="メッセージ" required class="box" cols="30" rows="10" maxlength="500"></textarea>
+         <input type="submit" value="送る" class="btn" name="send">
+      </form>
+-->
+<form name="cform" id="cform" target="_self" onsubmit="return postToGoogle();" action="" method="post">
+   <h3>空欄に記入をお願いします!</h3>
+   <input type="text" id="nameorder" name="entry.1756426252" required placeholder="名前" maxlength="50" class="box">
+   <input type="text" id="telephoneorder" name="entry.669701451" required placeholder="電話番号"  class="box" >
+   <input type="text" id="emailorder" name="entry.1377213559" required placeholder="メール" maxlength="50" class="box">
+   <input type="number" id="numberorder" name="entry.1215165530" required placeholder="人"　max="50" min="0" class="box">
+   <input type="datetime-local" id="timerorder" name="entry.234677964" required placeholder="日・月。年" class="box">
+   <textarea id="more" name="entry.1561971561" placeholder="メッセージ" required class="box" cols="30" rows="10" maxlength="500"></textarea>
+   <input type="submit" value="送る" class="btn" name="send">
+</form>
+<h3 id="success-msg" class="text-center" style="display: none;"> Your Message has been sended!</h3>
+   </div>
 
 </section>
+
+
 
 
 
