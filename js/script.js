@@ -28,7 +28,7 @@ window.onload = fadeOut;
 
 
 // form feedback
-function postToGoogle() {
+function postToGooglefeedback() {
     //Xử lý lấy dữ liệu các input vào biến tương ứng thông qua ID của input
     var name_feedback = $("#namefeedback").val();
     var number_feedback= $("#telephonefeedback").val();
@@ -39,13 +39,13 @@ function postToGoogle() {
     //Xử lý gửi dữ liệu lên form
     $.ajax({
         //Chỉ định đích gửi dữ liệu đến: là form response đã tạo ở trên
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSdJiGWKBR9hIO3BjMZNGm0C114B0QeAi5Pn5ASpZG38XGeRuw/formResponse?",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeE0OsrPuj-VXeaQkh5rPfqIvu9OOEg6WE3eR4AMy_3xZHNRw/formResponse?",
         //URL lấy từ link đã note ở trên nhé
         data: { //gán các giá trị tương ứng vào các Input name tương ứng đã lấy ở trên
-            "entry.904701568": name_feedback,
-            "entry.1437505510": number_feedback,
-            "entry.434468105": email_feedback,
-            "entry.2125361541": feedback,
+            "entry.469368358": name_feedback,
+            "entry.2077941168": number_feedback,
+            "entry.1803709813": email_feedback,
+            "entry.1804431666": feedback
         },
         type: "POST",
         dataType: "jsonp", //các bạn có thể để xml, nhưng khi bật console lên sẽ thấy báo đỏ lòm vì ko cho cross, còn cái này nó vẫn cảnh báo nhưng màu xám thôi, ko đỏ :v
